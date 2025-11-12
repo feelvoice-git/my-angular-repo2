@@ -1,11 +1,14 @@
 version: 0.2
+
 phases:
   install:
     commands:
       - echo "Skipping global install"
+
   pre_build:
     commands:
       - npm ci
+
   build:
     commands:
       - echo "Build started at: $(date)"
@@ -13,6 +16,7 @@ phases:
       - npx ng build --configuration=production
       - echo "Build ended at: $(date)"
       - echo "Build duration: ${SECONDS} seconds"
+
 artifacts:
   base-directory: dist/my-angular-project
   files:
