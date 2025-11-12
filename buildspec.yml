@@ -8,7 +8,7 @@ phases:
       - npm ci
   build:
     commands:
-      - npx ng build --configuration=development --aot=false
+      - nnpx ng build --configuration=production
 artifacts:
   base-directory: dist/my-angular-project
   files:
