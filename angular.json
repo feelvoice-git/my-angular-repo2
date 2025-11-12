@@ -69,7 +69,6 @@
               "optimization": false,
               "outputHashing": "none",
               "sourceMap": true,
-              "extractCss": true,
               "namedChunks": true,
               "aot": false,
               "buildOptimizer": false
