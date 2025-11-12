@@ -1,19 +1,14 @@
 version: 0.2
 phases:
   install:
-    runtime-versions:
-      nodejs: 20
     commands:
-      - npm install -g @angular/cli@17
+      - echo "Skipping global install"
   pre_build:
     commands:
-      - npm install
+      - npm ci
   build:
     commands:
-      - ng build -c production
-      - echo "Build completed."
-    finally:
-      - echo This is the finally block execution!
+      - npx ng build --configuration=development --aot=false
 artifacts:
   base-directory: dist/my-angular-project
   files:
