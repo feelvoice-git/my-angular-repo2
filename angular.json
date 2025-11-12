@@ -64,14 +64,6 @@
                   "maximumError": "10kb"
                 }
               ]
-            },
-            "development": {
-              "optimization": false,
-              "outputHashing": "none",
-              "sourceMap": true,
-              "namedChunks": true,
-              "aot": false,
-              "buildOptimizer": false
             }
           },
           "defaultConfiguration": "production"
